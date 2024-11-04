@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist -f",
-    "homepage": "https://github.com/FeedW3/lamourenzo.github.io"
+    "homepage": "https://feedw3.github.io/portfolio"
   },
   "dependencies": {
     "@react-buddy/ide-toolbox": "^2.4.0",
