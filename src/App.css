@@ -209,16 +209,17 @@ footer {
 }
 
 .project-item:nth-child(odd) {
-  flex-direction: row; /* Alignement normal pour les éléments impairs */
+  flex-direction: row;
 }
 
 .project-item:nth-child(even) {
-  flex-direction: row-reverse; /* Inverse l'ordre pour les éléments pairs */
+  flex-direction: row-reverse;
 }
 
 .project-item-content {
   flex: 1;
   padding: 20px;
+  margin: 10px 100px auto;
 }
 
 .project-item h3 {

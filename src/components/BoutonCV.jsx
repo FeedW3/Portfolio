@@ -1,8 +1,8 @@
 function BoutonCV(){
     return (
         <section id="bouton">
-            <a href="../assets/cv.pdf" download className="cv-button">
-                Télécharger mon CV
+            <a href="../../public/cv.pdf" download="cv.pdf">
+                <button>Télécharger mon CV</button>
             </a>
         </section>
     );
