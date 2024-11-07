@@ -9,7 +9,6 @@ import Footer from "./components/Footer.jsx";
 function HomePage() {
     return (
         <div className="App">
-            <Header/>
             <Presentation/>
             <Projects/>
             <About/>

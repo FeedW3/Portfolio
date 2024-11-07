@@ -1,4 +1,5 @@
 {
+  "homepage": "https://feedw3.github.io/portfolio",
   "name": "my-react-project",
   "private": true,
   "version": "0.0.0",
@@ -9,16 +10,14 @@
     "preview": "vite preview",
     "clean": "rimraf dist",
     "build": "vite build",
-    "predeploy" : "npm run build",
-    "deploy": "gh-pages -d dist",
-    "homepage": "https://feedw3.github.io/portfolio"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@react-buddy/ide-toolbox": "^2.4.0",
     "process": "^0.11.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.27.0",
     "rimraf": "^6.0.1"
   },
   "devDependencies": {

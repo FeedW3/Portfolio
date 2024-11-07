@@ -1,14 +1,6 @@
-import {Link} from "react-router-dom";
-
 function Contact() {
     return (
         <div className="contact">
-            <header className="header">
-                <h1>Lamour Enzo</h1>
-                <nav className="nav-list">
-                    <Link to="/">Accueil</Link>
-                </nav>
-            </header>
             <section id="contact">
                 <h2 className="section-title">Contact</h2>
                 <section id="contacts-list">

@@ -1,4 +1,4 @@
-import MonImage from '../assets/moi.jpg';
+import MonImage from '../assets/moi.png';
 
 function Presentation() {
     return (
@@ -8,7 +8,7 @@ function Presentation() {
                 <p>Actuellement étudiant en 2ᵉ année de BUT Informatique à l'IUT A de Villeneuve-d'Ascq, je suis en quête d’une opportunité qui me permettrait de découvrir le secteur dans lequel je pourrais évoluer</p>
             </div>
             <div className="image">
-                <img src={MonImage} alt="moi" style={{width: '100%', maxWidth: '500px'}}/>
+                <img src={MonImage} alt="moi" style={{width: '100%', maxWidth: '1000px'}}/>
             </div>
         </div>
     )

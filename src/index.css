@@ -40,19 +40,24 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: 50vh;
   max-width: 98%;
   padding: 100px;
   box-sizing: border-box;
-  background-color: rgba(160, 204, 204, 0.48); /* Couleur de fond pour le conteneur */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre pour le conteneur */
-  border-radius: 10px; /* Ajoute des coins arrondis */
+  background-color: rgba(160, 204, 204, 0.48);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   margin: 0 auto;
+}
+
+#about > .container {
+  height: 75vh;
 }
 
 .presentation {
   flex: 1;
   padding: 20px;
+  width: 50%;
 }
 
 .presentation h1 {
@@ -74,10 +79,8 @@ h1 {
 }
 
 .image img {
-  max-width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 button {
@@ -109,5 +112,24 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media (max-width: 768px) {
+  .container{
+    font-size: 12px;
+    padding: 10px;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image, .presentation {
+    text-align: center;
+    width: 100%;
+  }
+
+  #about > .container {
+    height: 100vh;
   }
 }
