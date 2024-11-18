@@ -3,7 +3,7 @@ function About() {
         <>
         <section id="about"></section><div className="flex items-center justify-center p-8">
             <div className="max-w-md p-6 rounded-lg">
-                <h1 className="text-5xl font-bold text-center">Présentations</h1>
+                <h1 className="text-5xl font-bold text-center">Mes Formations</h1>
             </div>
 
         </div><div className="collapse collapse-arrow bg-base-200">
