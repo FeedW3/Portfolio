@@ -1,21 +1,62 @@
 function Contact() {
     return (
-        <div className="contact">
-            <section id="contact">
-                <h2 className="section-title">Contact</h2>
-                <section id="contacts-list">
-                    <p>Vous pouvez me contacter aux adresses suivante : </p>
-                    <p>Université : enzo.lamour.etu@univ-lille.fr</p>
-                    <p>Personnel : <a
-                        href="mailto:lamourenzo@gmail.com">lamourenzo@gmail.com</a></p>
-                    <p>Linkedin : <a
-                        href="https://www.linkedin.com/in/lamour-enzo-4464a6270/"> https://www.linkedin.com/in/lamour-enzo-4464a6270/</a>
-                    </p>
-                    <p>Github : <a href="https://github.com/FeedW3"> https://github.com/FeedW3</a></p>
-                </section>
-            </section>
+
+    <>
+    <div className="flex items-center justify-center p-8">
+        <div className="max-w-md rounded-lg">
+            <h1 className="text-5xl font-bold text-center">Contact</h1>
         </div>
-    );
+    </div>
+            <section className="bg-base-200 flex items-center">
+                <div className="w-full bg-base-100 shadow-mg rounded-lg">
+                <p className="text-lg p-8">
+                     Vous pouvez me contacter aux adresses suivantes :
+                </p>
+                    <div className="p-8 space-y-8">
+                            <div className="flex items-center gap-4">
+                                <span className="font-semibold">Université :</span>
+                                <a
+                                    href="mailto:enzo.lamour.etu@univ-lille.fr"
+                                    className="link link-hover text-primary"
+                                >
+                                    enzo.lamour.etu@univ-lille.fr
+                                </a>
+                            </div>
+                            <div className="flex items-center gap-4">
+                                <span className="font-semibold">Personnel :</span>
+                                <a
+                                    href="mailto:lamourenzo@gmail.com"
+                                    className="link link-hover text-primary"
+                                >
+                                    lamourenzo@gmail.com
+                                </a>
+                            </div>
+                            <div className="flex items-center gap-4">
+                                <span className="font-semibold">LinkedIn :</span>
+                                <a
+                                    href="https://www.linkedin.com/in/lamour-enzo-4464a6270/"
+                                    className="link link-hover text-primary"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    https://www.linkedin.com/in/lamour-enzo-4464a6270/
+                                </a>
+                            </div>
+                            <div className="flex items-center gap-4">
+                                <span className="font-semibold">GitHub :</span>
+                                <a
+                                    href="https://github.com/FeedW3"
+                                    className="link link-hover text-primary"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    https://github.com/FeedW3
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </section></>
+      );
 }
 
 export default Contact;

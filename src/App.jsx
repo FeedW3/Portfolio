@@ -1,9 +1,10 @@
+import "./App.css"
 import HomePage from './HomePage';
 import ContactPage from './ContactPage';
 import AjustementEcran from "./components/AjustementEcran.jsx";
 import {useState} from "react";
-import About from "./components/About.jsx";
 import Header from "./components/Header.jsx";
+import ContactHeader from "./components/ContactHeader.jsx";
 
 function App() {
     const { width } = AjustementEcran();
@@ -31,8 +32,17 @@ function App() {
 
     return (
         <>
+
+        {/*<Header changePage = {changePage}/>
+        {renderPage()}*/}
+
+        {activePage === "contact" ? (
+            <ContactHeader changePage={changePage} />
+        ) : (
             <Header changePage={changePage} />
-            {renderPage()}
+        )}
+        {renderPage()}
+        
         </>
     );
     }
