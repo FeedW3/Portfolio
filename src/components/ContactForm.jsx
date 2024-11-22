@@ -15,7 +15,7 @@ function ContactForm() {
 
     return (
         <section className="bg-base-200 flex justify-center items-center">
-            <div className="w-full max-w-lg bg-base-200 p-8 rounded-lg shadow-md">
+            <div className="w-full max-w-lg bg-base-200 p-8 rounded-lg">
                 <h2 className="text-4xl font-bold text-center mb-6">Contactez-moi</h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="form-control">

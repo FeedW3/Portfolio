@@ -1,13 +1,15 @@
 function About() {
     return (
         <>
-        <section id="about"></section><div className="flex items-center justify-center p-8">
-            <div className="max-w-md p-6 rounded-lg">
-                <h1 className="text-5xl font-bold text-center">Mes Formations</h1>
-            </div>
+            <section id="about"></section>
+            <div className="flex items-center justify-center p-8">
+                <div className="max-w-md p-6 rounded-lg">
+                    <h1 className="text-5xl font-bold text-center">Mes Formations</h1>
+                </div>
 
-        </div><div className="collapse collapse-arrow bg-base-200">
-                <input type="radio" name="my-accordion-2" defaultChecked />
+            </div>
+            <div className="my-8 collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" defaultChecked/>
                 <div className="collapse-title text-xl font-medium">Université de Lille - IUT A</div>
                 <div className="collapse-content">
                     <p><strong>Formation :</strong> BUT Informatique</p>
@@ -19,23 +21,24 @@ function About() {
                         mes connaissances en architecture des systèmes d'information et en réseaux informatiques.
                     </p>
                 </div>
-                <div className="collapse collapse-arrow bg-base-200">
-                    <input type="radio" name="my-accordion-2" />
-                    <div className="collapse-title text-xl font-medium">Lycée St Joseph - Boulogne-sur-Mer</div>
-                    <div className="collapse-content">
-                        <p><strong>Diplôme :</strong> BACCALAURÉAT Technologique</p>
-                        <p><strong>Période :</strong> 2018 - 2021</p>
-                        <p>
-                            J'ai obtenu mon baccalauréat technologique au lycée St Joseph, où j'ai développé un intérêt
-                            particulier pour les sciences informatiques et les nouvelles technologies. Cette période
-                            m'a permis de renforcer mes compétences en analyse de systèmes, de découvrir le
-                            développement web
-                            et de me familiariser avec les langages de programmation de base. J'ai également participé à
-                            divers projets scolaires qui m'ont initié au travail en équipe.
-                        </p>
-                    </div>
+            </div>
+            <div className="my-8 collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2"/>
+                <div className="collapse-title text-xl font-medium">Lycée St Joseph - Boulogne-sur-Mer</div>
+                <div className="collapse-content">
+                    <p><strong>Diplôme :</strong> BACCALAURÉAT Technologique</p>
+                    <p><strong>Période :</strong> 2018 - 2021</p>
+                    <p>
+                        J'ai obtenu mon baccalauréat technologique au lycée St Joseph, où j'ai développé un intérêt
+                        particulier pour les sciences informatiques et les nouvelles technologies. Cette période
+                        m'a permis de renforcer mes compétences en analyse de systèmes, de découvrir le
+                        développement web
+                        et de me familiariser avec les langages de programmation de base. J'ai également participé à
+                        divers projets scolaires qui m'ont initié au travail en équipe.
+                    </p>
                 </div>
-            </div></>
+            </div>
+        </>
     );
 }
 

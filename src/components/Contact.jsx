@@ -8,7 +8,7 @@ function Contact() {
         </div>
     </div>
             <section className="bg-base-200 flex items-center">
-                <div className="w-full bg-base-100 shadow-mg rounded-lg">
+                <div className="w-full bg-base-100 rounded-lg">
                 <p className="text-lg p-8">
                      Vous pouvez me contacter aux adresses suivantes :
                 </p>
