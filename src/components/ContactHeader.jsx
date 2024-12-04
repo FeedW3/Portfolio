@@ -33,9 +33,10 @@ function ContactHeader({changePage}) {
                     <div className="hidden flex-none lg:block">
                         <ul className="menu menu-horizontal">
                             {/* Navbar menu content here */}
-                            <li><a href="#projects">Mes Projets</a></li>
-                            <li><a href="#about">Ma Formation</a></li>
-                            <li><a onClick={() => changePage("contact")}>Contact</a></li>
+                            <li><a onClick={() => {
+                                changePage("Home");
+                                closeMenu();
+                            }} className="cursor-pointer">Home</a></li>
                         </ul>
                     </div>
                 </div>
