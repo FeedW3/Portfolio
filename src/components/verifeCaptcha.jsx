@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 const verifeCaptcha = async (token) => {
-    const secretKey = "6LcxApoqAAAAAFhvsBqQ4gyCpIZFzPwZgyO-a99K";
+    const secretKey = process.env.RECAPTCHA_PRIVATE_KEY;
     const response = await axios.post(
         `https://www.google.com/recaptcha/api/siteverify`,
         null,

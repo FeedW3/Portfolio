@@ -17,7 +17,7 @@ function About() {
                     <p>
                         Durant cette formation, j'ai acquis des compétences solides en développement logiciel,
                         en gestion de bases de données et en gestion de projets. Les cours m'ont permis de
-                        développer une expertise en programmation (Java, Python, JavaScript) et d'approfondir
+                        développer une expertise en programmation (Java, SQL, JavaScript) et d'approfondir
                         mes connaissances en architecture des systèmes d'information et en réseaux informatiques.
                     </p>
                 </div>
