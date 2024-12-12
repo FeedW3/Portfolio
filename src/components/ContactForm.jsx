@@ -1,16 +1,51 @@
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 function ContactForm() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [captchaValue, setCaptchaValue] = useState(null); // Stocke le token CAPTCHA
+    const [isSending, setIsSending] = useState(false);
 
-    const handleSubmit = (e) => {
+    const handleCaptchaChange = (value) => {
+        setCaptchaValue(value);
+    };
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const mailtoLink = `mailto:lamourenzo@gmail.com?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(message + "\n\nFrom: " + name + "\nEmail: " + email)}`;
+        if (!captchaValue) {
+            alert('Veuillez valider le CAPTCHA avant de soumettre le formulaire.');
+            return;
+        }
 
-        window.location.href = mailtoLink;
+        setIsSending(true);
+
+        const templateParams = {
+            name: name,
+            email: email,
+            message: message,
+        };
+
+        try {
+            await emailjs.send(
+                'service_3wus19q',
+                'template_jp1fk83',
+                templateParams,
+                'QqI5thbNrhK2yh12J'
+            );
+            alert('Email envoyé avec succès !');
+            setName('');
+            setEmail('');
+            setMessage('');
+            setCaptchaValue(null);
+        } catch (error) {
+            alert('Erreur lors de l\'envoi de l\'email. Réessayez plus tard.');
+        } finally {
+            setIsSending(false);
+        }
     };
 
     return (
@@ -56,9 +91,18 @@ function ContactForm() {
                             className="textarea textarea-bordered w-full"
                         />
                     </div>
+
+                    {/* Intégration de reCAPTCHA */}
                     <div className="form-control">
-                        <button type="submit" className="btn btn-primary w-full">
-                            Envoyer
+                        <ReCAPTCHA
+                            sitekey={"6LcxApoqAAAAAFhEv_exwO6F7vnShnUmmlzhk2af"}
+                            onChange={handleCaptchaChange}
+                        />
+                    </div>
+
+                    <div className="form-control">
+                        <button type="submit" className="btn btn-primary w-full" disabled={isSending}>
+                            {isSending ? 'Envoi en cours...' : 'Envoyer'}
                         </button>
                     </div>
                 </form>

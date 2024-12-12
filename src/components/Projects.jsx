@@ -1,4 +1,4 @@
-import imageProjetJava from "../assets/javaProjet.jpg";
+import imageProjetJava from "../assets/javaProjet.png";
 import imageProjetBDD from "../assets/BDDProjet.jpg";
 import imageProjetAgile from "../assets/AgileProjet.jpg";
 import imageProjetErisse from "../assets/ErisseProjet.jpg";
@@ -13,7 +13,7 @@ function Projects() {
         </div>
       </div>
 
-        <div className="hero bg-base-200 min-h-screen lg:min-h-[50vh]">
+        <div className="hero bg-base-200 min-h-screen lg:min-h-[50vh] text-justify">
             <div className="hero-content flex-col lg:flex-row lg:gap-8">
                 <img
                     src={imageProjetJava}
@@ -24,7 +24,7 @@ function Projects() {
                         Ce projet consiste à concevoir et développer une application informatique dont l'objectif principal est de permettre à l'utilisateur de déterminer le chemin le plus court entre deux points, désignés comme "point A" et "point B". Cette application repose sur l'implémentation d'algorithmes de recherche d'itinéraires optimisés, tels que l'algorithme de Dijkstra ou l'algorithme BellmanFord. Ces techniques garantissent une efficacité et une précision accrues dans la recherche du parcours le plus rapide ou le plus économique en fonction de divers critères comme le coût, l'émission de CO2 et le temps mais aussi les moyens de transport.                    </p>
                 </div>
             </div>
-        </div><div className="hero bg-base-100 min-h-screen lg:min-h-[50vh]">
+        </div><div className="hero bg-base-100 min-h-screen lg:min-h-[50vh] text-justify">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img
                         src={imageProjetBDD}
@@ -36,7 +36,7 @@ function Projects() {
                         </p>
                     </div>
                 </div>
-            </div><div className="hero bg-base-200 min-h-screen lg:min-h-[50vh]">
+            </div><div className="hero bg-base-200 min-h-screen lg:min-h-[50vh] text-justify">
                 <div className="hero-content flex-col lg:flex-row">
                     <img
                         src={imageProjetAgile}
@@ -48,7 +48,7 @@ function Projects() {
                         </p>
                     </div>
                 </div>
-            </div><div className="hero bg-base-100 min-h-screen lg:min-h-[50vh]">
+            </div><div className="hero bg-base-100 min-h-screen lg:min-h-[50vh] text-justify">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img
                         src={imageProjetErisse}

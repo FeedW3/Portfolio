@@ -7,7 +7,7 @@ function Contact() {
             <h1 className="text-5xl font-bold text-center">Contact</h1>
         </div>
     </div>
-            <section className="bg-base-200 flex items-center">
+            <section className="bg-base-200 flex items-center text-justify">
                 <div className="w-full bg-base-100 rounded-lg">
                 <p className="text-lg p-8">
                      Vous pouvez me contacter aux adresses suivantes :

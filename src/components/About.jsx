@@ -11,7 +11,7 @@ function About() {
             <div className="my-8 collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" defaultChecked/>
                 <div className="collapse-title text-xl font-medium">Université de Lille - IUT A</div>
-                <div className="collapse-content">
+                <div className="collapse-content text-justify">
                     <p><strong>Formation :</strong> BUT Informatique</p>
                     <p><strong>Période :</strong> 2022 - Présent</p>
                     <p>
@@ -25,7 +25,7 @@ function About() {
             <div className="my-8 collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2"/>
                 <div className="collapse-title text-xl font-medium">Lycée St Joseph - Boulogne-sur-Mer</div>
-                <div className="collapse-content">
+                <div className="collapse-content text-justify">
                     <p><strong>Diplôme :</strong> BACCALAURÉAT Technologique</p>
                     <p><strong>Période :</strong> 2018 - 2021</p>
                     <p>
