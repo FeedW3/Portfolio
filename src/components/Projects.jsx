@@ -1,7 +1,7 @@
 import Modal from "react-modal";
 import {useState} from "react";
 
-import imageProjetJava from "../assets/AgileProjet.png";
+import imageProjetJava from "../assets/TrajetProjet.png";
 import imageProjetBDD from "../assets/BDDProjet.jpg";
 import imageProjetAgile from "../assets/AgileProjet.png";
 import imageProjetIris from "../assets/IrisProjet.png";
