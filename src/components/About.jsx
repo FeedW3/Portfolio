@@ -1,3 +1,5 @@
+import React from "react";
+
 function About() {
     return (
         <>
@@ -9,7 +11,7 @@ function About() {
 
             </div>
             <div className="my-8 collapse collapse-arrow bg-base-200">
-                <input type="radio" name="my-accordion-2" defaultChecked/>
+                <input type="checkbox" defaultChecked/>
                 <div className="collapse-title text-xl font-medium">Université de Lille - IUT A</div>
                 <div className="collapse-content text-justify">
                     <p><strong>Formation :</strong> BUT Informatique</p>
@@ -23,7 +25,7 @@ function About() {
                 </div>
             </div>
             <div className="my-8 collapse collapse-arrow bg-base-200">
-                <input type="radio" name="my-accordion-2"/>
+                <input type="checkbox" defaultChecked/>
                 <div className="collapse-title text-xl font-medium">Lycée St Joseph - Boulogne-sur-Mer</div>
                 <div className="collapse-content text-justify">
                     <p><strong>Diplôme :</strong> BACCALAURÉAT Technologique</p>

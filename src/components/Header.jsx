@@ -35,8 +35,10 @@ function Header({changePage}) {
                         <ul className="menu menu-horizontal">
                             {/* Navbar menu content here */}
                             <li><a href="#projects">Mes Projets</a></li>
-                            <li><a href="#about">Ma Formation</a></li>
-                            <li><a onClick={() => changePage("contact")} >Contact</a></li>
+                            <li><a href="#about">Mes Formation</a></li>
+                            <li><a href="#experiences">Mes Expériences</a></li>
+                            <li><a href="#competences">Mes Compétences</a></li>
+                            <li><a onClick={() => changePage("contact")}>Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -46,11 +48,13 @@ function Header({changePage}) {
                 <ul className="menu bg-base-200 min-h-full w-80 p-4 z-10">
                     {/* Sidebar content here */}
                     <li><a href="#projects" onClick={closeMenu}>Mes Projets</a></li>
-                    <li><a href="#about" onClick={closeMenu}>Ma Formation</a></li>
+                    <li><a href="#about" onClick={closeMenu}>Mes Formation</a></li>
+                    <li><a href="#experiences" onClick={closeMenu}>Mes Expériences</a></li>
+                    <li><a href="#competences" onClick={closeMenu}>Mes Compétences</a></li>
                     <li><a onClick={() => {
                         changePage("contact");
                         closeMenu();
-                    }}className="cursor-pointer">Contact</a></li>
+                    }} className="cursor-pointer">Contact</a></li>
                 </ul>
             </div>
         </div>
