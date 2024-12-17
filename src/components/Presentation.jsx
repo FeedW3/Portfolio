@@ -12,8 +12,7 @@ function Presentation() {
         <div className="max-w-md">
         <h1 className="mb-5 text-5xl font-bold">Lamour Enzo</h1>
         <p className="mb-5">
-        Actuellement étudiant en 2ᵉ année de BUT Informatique à l'IUT A de Villeneuve-d'Ascq, je suis en quête d’une opportunité qui me permettrait de découvrir le secteur dans lequel je pourrais évoluer
-        </p>
+            Actuellement étudiant en 2ᵉ année de BUT Informatique à l'IUT A de Villeneuve-d'Ascq, je suis à la recherche d'un stage d'une durée de trois mois, débutant en avril        </p>
         </div>
     </div>
     </div>
