@@ -45,12 +45,12 @@ function Contact() {
                             <div className="flex items-center gap-4">
                                 <span className="font-semibold">GitHub :</span>
                                 <a
-                                    href="https://github.com/FeedW3"
+                                    href="https://github.com/Gradlar"
                                     className="link link-hover text-primary"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    https://github.com/FeedW3
+                                    https://github.com/Gradlar
                                 </a>
                             </div>
                         </div>
