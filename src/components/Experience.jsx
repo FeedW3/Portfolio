@@ -1,44 +1,5 @@
 import React from 'react';
 
-const experiences = [
-    {
-        id: 1,
-        title: 'Employé dans la mise en rayon',
-        date: 'Été 2024',
-        company: 'E.Leclerc Étaples-Sur-Mer',
-        tasks: [
-            'Organisation et gestion des stocks',
-            'Service à la clientèle',
-            'Travail d’équipe',
-            'Prises d’initiatives',
-        ],
-    },
-    {
-        id: 2,
-        title: 'Hôte de caisse',
-        date: 'Été 2022',
-        company: 'Intermarché Saint-Étienne-au-Mont',
-        tasks: [
-            'Gestion de la caisse',
-            'Accueil clientèle',
-            'Travail d’équipe',
-            'Polyvalence sur les différentes tâches (mise en rayon et préparation des commandes)',
-        ],
-    },
-    {
-        id: 3,
-        title: 'Service informatique (stage)',
-        date: 'Janvier 2022 - Février 2022',
-        company: 'Médiathèque de Saint-Étienne-au-Mont',
-        tasks: [
-            'Maintenance d’ordinateurs',
-            'Formation des utilisateurs',
-            'Observation des méthodes de gestion d’un réseau informatique',
-            'Mise en réseau d’applications',
-        ],
-    },
-];
-
 const Experience = () => {
     return (
         <>
