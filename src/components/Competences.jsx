@@ -9,7 +9,9 @@ const Competences = () => {
                     <h1 className="text-5xl font-bold text-center">Mes Compétences</h1>
                 </div>
             </div>
-
+            <div className="text-center">
+                <h2>Informatique</h2>
+            </div>
             {/* Liste des compétences */}
             <section id="competences" className="py-16">
                 <div className="flex flex-wrap justify-center gap-8 sm:gap-6">
@@ -77,6 +79,57 @@ const Competences = () => {
                     </div>
                 </div>
             </section>
+            <div className="text-center">
+                <h2>Savoir-être</h2>
+            </div>
+
+            <section id="savoir-etre" className="py-16">
+                <div className="flex flex-wrap justify-center gap-8 sm:gap-6">
+                    <div className="text-center border p-4 rounded shadow">
+                        <p className="text-lg font-semibold text-gray-700">Gérer une dead ligne</p>
+                        <hr className="my-4 border-gray-300"/>
+                        <p className="text-sm text-gray-500">Compétence en organisation</p>
+                    </div>
+
+                    <div className="text-center border p-4 rounded shadow">
+                        <p className="text-lg font-semibold text-gray-700">Travailler en équipe</p>
+                        <hr className="my-4 border-gray-300"/>
+                        <p className="text-sm text-gray-500">Collaboration efficace</p>
+                    </div>
+
+                    <div className="text-center border p-4 rounded shadow">
+                        <p className="text-lg font-semibold text-gray-700">Persévérant</p>
+                        <hr className="my-4 border-gray-300"/>
+                        <p className="text-sm text-gray-500">Résilience et détermination</p>
+                    </div>
+
+                    <div className="text-center border p-4 rounded shadow">
+                        <p className="text-lg font-semibold text-gray-700">Ponctuel</p>
+                        <hr className="my-4 border-gray-300"/>
+                        <p className="text-sm text-gray-500">Respect des délais</p>
+                    </div>
+                </div>
+            </section>
+
+            <div className="text-center">
+                <h2>Autre</h2>
+            </div>
+
+            <section id="competences-autre" className="py-16">
+                <div className="flex flex-wrap justify-center gap-8 sm:gap-6">
+                    <div className="text-center border p-4 rounded shadow">
+                        <p className="text-lg font-semibold text-gray-700">Permis</p>
+                        <hr className="my-4 border-gray-300"/>
+                        <p className="text-sm text-gray-500">B2</p>
+                    </div>
+                    <div className="text-center border p-4 rounded shadow">
+                        <p className="text-lg font-semibold text-gray-700">Anglais</p>
+                        <hr className="my-4 border-gray-300"/>
+                        <p className="text-sm text-gray-500">niveau B2</p>
+                    </div>
+                </div>
+            </section>
+
         </>
     );
 };
